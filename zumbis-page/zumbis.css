@@ -128,6 +128,29 @@ footer {
     color: #e0e6f0;
 }
 
+/* ======= TELHADO ==========*/
+
+.tabela-telhado th{
+    background-color: #814525;
+    color: #e4c8ba;
+}
+
+.tabela-telhado td{
+    background-color: #523526;
+    color: #ffffff;
+}
+
+/* ========= NIGHTROOF ==========*/
+.tabela-nightroof th{
+    background-color: #2e1313;
+    color: #ff6961;
+}
+
+.tabela-nightroof td{
+    background-color: #3a1e1e;
+    color: #ffffff;
+}
+
 
 /* ---------- TÍTULOS DE MAPAS ---------- */
 .mapa-titulo {
@@ -186,6 +209,28 @@ footer {
 #nevoeiro{
     background-color: #3c3c54;
     border-left: 5px solid #9999cc;
+}
+
+/* ======= TELHADO ==========*/
+
+.mapa-telhado{
+    color: #d47f00;
+}
+
+#telhado{
+    background-color: #5c2f10;
+    border-left: 5px solid #d47f00;
+}
+
+/* ======= NIGHTROOF ==========*/
+
+.mapa-nightroof{
+    color: #d43f3f;
+}
+
+#nightroof{
+    background-color: #3a1e1e; /* fundo escuro com tom de telhado à noite */
+    border-left: 5px solid #d43f3f; /* borda vermelha intensa */
 }
 
 

@@ -50,7 +50,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 14px;
     border-top: 2px solid #aaffaa;
 }
@@ -229,8 +229,8 @@ footer {
 }
 
 #nightroof{
-    background-color: #3a1e1e; /* fundo escuro com tom de telhado à noite */
-    border-left: 5px solid #d43f3f; /* borda vermelha intensa */
+    background-color: #3a1e1e; 
+    border-left: 5px solid #d43f3f; 
 }
 
 

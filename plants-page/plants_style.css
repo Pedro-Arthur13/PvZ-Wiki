@@ -1,0 +1,80 @@
+body{
+    background-color: #244542;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #1a2f2e;
+    padding: 15px 0;
+    border-bottom: 2px solid #aaffaa;
+}
+
+nav ul {
+    list-style:  none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    /* esse azul do lnik eh mt feio */
+    text-decoration: none;
+    color: #aaffaa;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+main{
+    padding: 20px 40px;
+}
+
+
+footer {
+    background-color: #1a2f2e;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+    border-top: 2px solid #aaffaa;
+}
+
+.titulo {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tabela-planta th {
+    background-color: #1a2f2e;
+    color: #aaffaa;
+}
+
+.tabela-planta {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.tabela-planta th, tabela-planta td{
+    border: 1px solid #ffffff33;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tabela-planta img{
+    border-radius: 8px;
+}

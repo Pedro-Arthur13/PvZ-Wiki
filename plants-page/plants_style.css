@@ -100,6 +100,15 @@ h1, h2 {
     color: #aaffaa;
 }
 
+.tabela-noite td {
+    background-color: #2a354a;
+    color: #ddeeff;
+}
+
+.tabela-noite th {
+    background-color: #1f2a3a;
+    color: #88aaff;
+}
 
 .tabela-nightroof th {
     background-color: #2e1313;
@@ -136,11 +145,16 @@ hr {
     color: #66ff66;
 }
 
+.titulo-noite {
+    color: #446688;
+}
 
 #dia {
     background-color: #2d5f2e;
     border-left: 5px solid #66ff66;
 }
 
-
-
+#noite {
+    background-color: #1e2b3b;
+    border-left: 5px solid #446688;
+}

@@ -46,12 +46,13 @@ footer {
     background-color: #1a2f2e;
     color: white;
     text-align: center;
-    font-size: 14px;
     padding: 15px;
+    margin-top: 80px;
+    font-size: 14px;
     border-top: 2px solid #aaffaa;
 }
 
-h1, h2{
+h1, h2 {
     font-family: 'Luckiest Guy', cursive;
     font-weight: normal;
 }
@@ -66,7 +67,6 @@ h1, h2{
     margin-bottom: 20px;
 }
 
-
 .tabela-planta th {
     background-color: #1a2f2e;
     color: #aaffaa;
@@ -75,16 +75,72 @@ h1, h2{
 .tabela-planta {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    color: #aaffaa;
 }
 
-.tabela-planta th, tabela-planta td{
+.tabela-planta th,
+.tabela-planta td {
     border: 1px solid #ffffff33;
     padding: 10px;
     text-align: left;
     vertical-align: middle;
 }
 
-.tabela-planta img{
+.tabela-planta img {
     border-radius: 8px;
 }
+
+.tabela-dia td {
+    background-color: #356e35;
+    color: #e9ffe9;
+}
+
+.tabela-dia th {
+    background-color: #2a552a;
+    color: #aaffaa;
+}
+
+
+.tabela-nightroof th {
+    background-color: #2e1313;
+    color: #ff6961;
+}
+
+.tabela-nightroof td {
+    background-color: #3a1e1e;
+    color: #ffffff;
+}
+
+.titulo-planta {
+    text-align: left;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.section-container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #aaa;
+    opacity: 0.3;
+    margin: 30px 0;
+}
+
+.titulo-dia {
+    color: #66ff66;
+}
+
+
+#dia {
+    background-color: #2d5f2e;
+    border-left: 5px solid #66ff66;
+}
+
+
+

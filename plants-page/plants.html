@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="plants_style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        /* quebra de  linha em descricoes longas */
+        .tabela-planta td:nth-child(4) { 
+            white-space: normal; 
+            max-width: 400px; 
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -25,22 +32,66 @@
         <h1 class="titulo">Plantas</h1>
         <p class="subtitulo">Conheça as principais plantas do Plants Vs Zombies</p>
 
-        <section class="section-container">
+        <section class="section-container" id="dia">
             <hr>
-            <h2 class="titulo-planta">Plantas iniciais</h2>
-            <table class="tabela-planta">
+            <h2 class="titulo-planta titulo-dia">Dia</h2>
+            <table class="tabela-planta tabela-dia">
                 <thead>
                     <tr>
                         <th>Imagem</th>
                         <th>Nome</th>
+                        <th>Custo de Sol</th>
                         <th>Descrição</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="imgs/peashooter.png" alt="disparaervilha" width="100"</td>
+                        <td><img src="imgs/peashooter.png" alt="Disparervilha" width="100"></td>
                         <td>Disparervilha</td>
-                        <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit odio illum deleniti dolores earum! Fugiat inventore, nulla cum fugit doloribus aperiam nostrum eaque est? Exercitationem quisquam consectetur ducimus nesciunt quibusdam?</td>
+                        <td>100</td>
+                        <td>Disparervilha é a primeira e principal planta de ataque recebida no primeiro jogo Plants vs. Zombies. Ela é uma planta que atira ervilhas, disparando uma ervilha por vez. Suas ervilhas podem ser incendiadas pela Madeira-Tocha para causar o dobro de dano.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/sunflower.png" alt="Girassol" width="100"></td>
+                        <td>Girassol</td>
+                        <td>50</td>
+                        <td>Girassol é a primeira planta produtora de sol recebida no jogo. Ela produz sol para comprar outras plantas ou usar outros itens. Por isso, é uma das plantas mais importantes no jogo e quase sempre é usada.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/cherrybomb.png" alt="Cereja-Bomba" width="100"></td>
+                        <td>Cereja-Bomba</td>
+                        <td>150</td>
+                        <td>Cereja-Bomba é uma planta de uso único que explode e destrói todos os zumbis em uma área 3x3. Ela tem um tempo de recarga lento.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/wallnut.png" alt="Noz" width="100"></td>
+                        <td>Noz</td>
+                        <td>50</td>
+                        <td>Noz é uma planta defensiva de uso único que tem alta resistência. Ela é usada para bloquear a passagem dos zumbis, permitindo que suas outras plantas ataquem. No entanto, ela não causa dano.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/potatomine.png" alt="Mina Terrestre" width="100"></td>
+                        <td>Mina Terrestre</td>
+                        <td>25</td>
+                        <td>Mina Terrestre é uma planta de uso único que detona quando um zumbi se aproxima, destruindo-o. Ela precisa de um tempo para armar após ser plantada.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/snowpea.png" alt="Ervilha Congelante" width="100"></td>
+                        <td>Ervilha Congelante</td>
+                        <td>175</td>
+                        <td>Ervilha Congelante é uma planta atacante que dispara ervilhas congelantes. Essas ervilhas causam dano e também desaceleram os zumbis, tornando-os mais fáceis de serem atingidos.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/chomper.png" alt="Boca-de-dragão" width="100"></td>
+                        <td>Boca-de-dragão</td>
+                        <td>150</td>
+                        <td>Boca-de-dragão é uma planta que pode engolir um zumbi inteiro de uma vez, mas leva um tempo para mastigar e se preparar para o próximo ataque, deixando-o vulnerável.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/repeater.png" alt="Disparervilha Repetidora" width="100"></td>
+                        <td>Disparervilha Repetidora</td>
+                        <td>200</td>
+                        <td>Disparervilha Repetidora é uma versão mais potente da Disparervilha, atirando duas ervilhas por vez. Ela é essencial para aumentar seu poder de fogo rapidamente.</td>
                     </tr>
                 </tbody>
             </table>

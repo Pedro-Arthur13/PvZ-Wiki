@@ -1,3 +1,8 @@
+/* smooth scroll*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #244542;
     color: white;
@@ -15,9 +20,11 @@ header {
     top: 0;
     right: 0;
     left: 0;
+    /* pros cards nao sobrepor o header */
+    z-index: 10;
 }
 
-nav ul {
+.nav-header ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -26,13 +33,13 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
+.nav-header ul li a {
     text-decoration: none;
     color: #aaffaa;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-header ul li a:hover {
     color: #ffffff;
 }
 
@@ -89,6 +96,37 @@ footer {
 
 .zumbi-table img {
     border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-fig{
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.container-fig:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+ul img{
+    border: 2px solid #50ae1d;
+    border-radius: 8px;
+    width: 170px;
+    height: 160px;
+   
 }
 
 

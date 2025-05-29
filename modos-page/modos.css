@@ -21,9 +21,11 @@ header {
     right: 0;
     left: 0;
     width: 100%;
+    /* pros cards nao sobrepor o header */
+    z-index: 10;
 }
 
-nav ul {
+.nav-header ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -32,13 +34,13 @@ nav ul {
     padding: 0;
 }
 
-nav ul li a {
+.nav-header ul li a {
     text-decoration: none;
     color: #aaffaa;
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-header ul li a:hover {
     color: #ffffff;
 }
 
@@ -108,8 +110,6 @@ a{
 .container-fig:hover{
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-
- 
 }
 
 ul img{

@@ -28,10 +28,59 @@
         </nav>
     </header>
 
+
     <main>
+
         <h1 class="titulo">Plantas</h1>
         <p class="subtitulo">Conheça as principais plantas do Plants Vs Zombies</p>
+        <hr>
 
+        <nav class="ambiente-navegacao">
+            <ul>
+                <li>
+                    <a href="#dia" class="ambiente-link">
+                        <figure class="container-fig container-dia">
+                            <img src="imgs/day.png" alt="Dia">
+                            <figcaption>Dia</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#noite" class="ambiente-link">
+                        <figure class="container-fig container-noite">
+                            <img src="imgs/night.png" alt="Noite">
+                            <figcaption>Noite</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#piscina" class="ambiente-link">
+                        <figure class="container-fig container-piscina">
+                            <img src="imgs/pool.png" alt="Piscina">
+                            <figcaption>Piscina</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#nevoeiro" class="ambiente-link">
+                        <figure class="container-fig container-nevoeiro">
+                            <img src="imgs/fog.png" alt="Nevoeiro">
+                            <figcaption>Nevoeiro</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li>
+                    <a href="#telhado" class="ambiente-link">
+                        <figure class="container-fig container-telhado">
+                            <img src="imgs/roof.png" alt="Telhado">
+                            <figcaption>Telhado</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
         <section class="section-container" id="dia">
             <hr>
             <h2 class="titulo-planta titulo-dia">Dia</h2>
@@ -288,11 +337,103 @@
                 </tbody>
             </table>
         </section>
+        <section class="section-container" id="telhado">
+            <hr>
+            <h2 class="titulo-planta titulo-telhado">Telhado</h2>
+            <table class="tabela-planta tabela-telhado">
+                <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Custo de Sol</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="imgs/cabbagepult.png" alt="Dispara-Repolho" width="100"></td>
+                        <td>Dispara-Repolho</td>
+                        <td>100</td>
+                        <td>Dispara-Repolho é uma planta que atira repolhos em arco, podendo acertar zumbis que estão atrás de defesas, como os Zumbis Escavadores.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/flowerpot.png" alt="Vaso de Flores" width="100"></td>
+                        <td>Vaso de Flores</td>
+                        <td>25</td>
+                        <td>Vaso de Flores é um item essencial nas fases de telhado. Ele é plantado sobre o telhado inclinado e permite que outras plantas sejam plantadas sobre ele.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/kernelpult.png" alt="Dispara-Milho" width="100"></td>
+                        <td>Dispara-Milho</td>
+                        <td>100</td>
+                        <td>Dispara-Milho é uma planta que atira grãos de milho que causam dano leve, ou manteiga que paralisa os zumbis por um curto período.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/coffeebean.png" alt="Grão de Café" width="100"></td>
+                        <td>Grão de Café</td>
+                        <td>75</td>
+                        <td>Grão de Café é uma planta de uso único que, quando plantada sobre um cogumelo, o acorda e permite que ele funcione durante o dia.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/garlic.png" alt="Alho" width="100"></td>
+                        <td>Alho</td>
+                        <td>50</td>
+                        <td>Alho é uma planta defensiva que desvia zumbis para outras linhas. Quando um zumbi morde o Alho, ele é forçado a mudar para uma linha adjacente.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/umbrellaleaf.png" alt="Folha de Guarda-Chuva" width="100"></td>
+                        <td>Folha de Guarda-Chuva</td>
+                        <td>100</td>
+                        <td>Folha de Guarda-Chuva é uma planta defensiva que protege as plantas ao seu redor de ataques aéreos, como os projéteis de Zumbis Arremessadores.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/marigold.png" alt="Calêndula" width="100"></td>
+                        <td>Calêndula</td>
+                        <td>50</td>
+                        <td>Calêndula é uma planta produtora de moedas. Ela não ataca, mas periodicamente produz moedas que podem ser coletadas para ganhar dinheiro.</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/melonpult.png" alt="Dispara-Melancia" width="100"></td>
+                        <td>Dispara-Melancia</td>
+                        <td>200</td>
+                        <td>Dispara-Melancia é uma planta que atira melancias em arco, causando dano pesado e em área. É a versão melhorada da Dispara-Repolho.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
     <footer>
         <p>
             <span>&copy;</span> Feito por Emanuel, Pedro Arthur e Miguel Sthevão — Trabalho de Desenvolvimento e Informática Aplicada à Web
         </p>
     </footer>
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+    <script>
+        // sempre vez que a pag eh rolada chama essa func
+        window.onscroll = function() {
+            scrollFunction(); // chama a func que mostra o buttn
+        };
+    
+        // show/hide bttn
+        function scrollFunction() {
+            var btnTopo = document.getElementById("btnTopo"); 
+            
+            // 20px pra baixo
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block"; // show bttn
+            } else {
+                btnTopo.style.display = "none"; // hide bttn
+            }
+        }
+    
+        // bttn click
+        document.getElementById("btnTopo").addEventListener("click", function() {
+            // scroll pra cima suave
+            window.scrollTo({
+                top: 0, // posicao 0
+                behavior: 'smooth' // smooth
+            });
+        });
+    </script>
 </body>
 </html>

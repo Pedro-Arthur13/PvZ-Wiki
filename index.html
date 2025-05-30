@@ -67,6 +67,34 @@
         <p><span>&copy;</span> Feito por Emanuel, Pedro Arthur e Miguel Sthevão — Trabalho de Desenvolvimento e
             Informática Aplicada à Web</p>
     </footer>
+    <script>
+        let clickCount = 0;
+        let lastClickTime = 0;
+        const DURATION_THRESHOLD = 500; 
+        const banner = document.querySelector('.banner');
+        const audio = new Audio('audio/pvz_sound.mp3'); 
+
+        if (banner) {
+            banner.addEventListener('click', () => {
+                const currentTime = new Date().getTime();
+
+                if (currentTime - lastClickTime < DURATION_THRESHOLD) {
+                    clickCount++;
+                } else {
+                    clickCount = 1; 
+                }
+
+                lastClickTime = currentTime;
+
+                if (clickCount === 3) {
+                    audio.play();
+                    clickCount = 0; 
+                }
+            });
+
+
+        }
+    </script>
 </body>
 
 </html>

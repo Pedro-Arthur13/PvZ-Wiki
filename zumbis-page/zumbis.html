@@ -84,8 +84,8 @@
                         </figure>
                     </a>
                 </li>
-        </nav>
         </ul>
+    </nav>
 
         <hr>
 
@@ -219,7 +219,7 @@
                         <td>Zumbi Mergulhador</td>
                         <td>Nossa!! Um zumbi aquático! Ah, na verdade ele só está usando uma máscara de mergulho. Ele
                             fica
-                            submerso até sentir cheiro de planta. Use uma Alga-Envolvente para afogá-lo.</td>
+                            submerso até sentir cheiro de planta. Use uma Alga-Marinha para afogá-lo.</td>
                     </tr>
                     <tr>
                         <td><img src="imgs/zomboni.webp" alt="Zumboni" width="100"></td>
@@ -238,7 +238,7 @@
                         <td><img src="imgs/dolphin-rider-zombie.webp" alt="Zumbi Golfileiro" width="100"></td>
                         <td>Zumbi Golfileiro</td>
                         <td>Como esse maluco arranjou um golfinho zumbi!? Graças ao golfinho ele é muito rápido e salta
-                            por cima da planta à sua frente, porém ele não fará isso caso tenha uma Alga-Envolvente ou
+                            por cima da planta à sua frente, porém ele não fará isso caso tenha uma Alga-Marinha ou
                             uma
                             Noz-Alta em sua frente.</td>
                     </tr>
@@ -315,7 +315,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="imgs/bunger-zombie.webp" alt="Zumbi Elástico" width="100"></td>
+                        <td><img class="bungee" src="imgs/bunger-zombie.webp" alt="Zumbi Elástico" width="100"></td>
                         <td>Zumbi Cabo Elástico</td>
                         <td>IIIIIIHÁAA!!! Esse zumbi despenca do céu e rouba suas plantas sem pedir licença. Às vezes,
                             em vez de pegar suas plantas, ele dá uma caroninha para outros zumbis e joga eles em cima
@@ -388,6 +388,33 @@
         <p><span>&copy;</span> Feito por Emanuel, Pedro Arthur e Miguel Sthevão — Trabalho de Desenvolvimento e
             Informática Aplicada à Web</p>
     </footer>
+
+    <script>
+        let clickCount = 0
+        let lastClickTime = 0
+        const DURATION_THRESHOLD = 500
+        const bungee = document.querySelector('.bungee')
+        const audio = new Audio('../audio/ihaaa.mp3')
+
+        if (bungee) {
+            bungee.addEventListener('click', () => {
+                const currentTime = new Date().getTime()
+
+                if (currentTime - lastClickTime < DURATION_THRESHOLD) {
+                    clickCount++
+                } else{
+                    clickCount = 1
+                }
+
+                lastClickTime = currentTime
+
+                if (clickCount === 3) {
+                    audio.play()
+                    clickCount = 0
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

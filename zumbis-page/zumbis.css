@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/* pro header nao cobrir parte do conteudo*/
+:target{
+    scroll-margin-top: 80px;
+}
+
 body {
     background-color: #244542;
     color: white;
@@ -99,11 +104,13 @@ footer {
 }
 
 ul {
-    list-style: none;
-    align-items: center;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
 }
 
 ul li a {
@@ -112,21 +119,62 @@ ul li a {
 }
 
 .container-fig{
+    text-align: center;
+    margin: 0;
+    width: 120px;
     transition: transform 0.3s ease;
     border-radius: 5px;
 }
 
 .container-fig:hover{
     transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-fig figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
 ul img{
-    border: 2px solid #50ae1d;
+    border: 3px solid;
     border-radius: 8px;
-    width: 170px;
-    height: 160px;
-   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+#fig-dia img{
+    border-color: #66ff66;
+    box-shadow: 0 0 10px rgba(102, 255, 102, 0.5);
+}
+
+#fig-noite img{
+    border-color: #446688;
+    box-shadow: 0 0 10px rgba(68, 102, 136, 0.5);
+}
+
+#fig-piscina img{
+    border-color: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+#fig-nevoeiro img{
+    border-color: #9999cc;
+    box-shadow: 0 0 10px rgba(153, 153, 204, 0.5);
+}
+
+#fig-telhado img{
+    border-color: #d47f00;
+    box-shadow: 0 0 10px rgba(212, 127, 0, 0.5);
+}
+
+#fig-nightroof img{
+    border-color: #d43f3f;
+    box-shadow: 0 4px 12px rgba(212, 63, 63, 0.5);
 }
 
 

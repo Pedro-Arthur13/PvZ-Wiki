@@ -2,6 +2,9 @@
 html {
     scroll-behavior: smooth;
 }
+:target{
+    scroll-margin-top: 80px;
+}
 
 body {
     background-color: #244542;
@@ -85,17 +88,27 @@ footer {
 ul {
     list-style: none;
     align-items: center;
+    text-align: center;
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
-     
+    flex-wrap: wrap;    
 }
+
+
 
 section p {
     font-size: 18px; 
     line-height: 1.8; 
 }
 
+figcaption{
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
 
 a{
     text-decoration: none;
@@ -107,16 +120,19 @@ a{
     border-radius: 5px;
 }
 
+.container-fig img{
+    box-shadow: 0 0 10px rgba(102, 255, 102, 0.5);
+}
+
 .container-fig:hover{
     transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 ul img{
     border: 2px solid #50ae1d;
     border-radius: 8px;
-    width: 170px;
-    height: 160px;
+    width: 140px;
+    height: 130px;
    
 }
 

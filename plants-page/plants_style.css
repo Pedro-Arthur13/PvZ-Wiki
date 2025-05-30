@@ -120,6 +120,16 @@ h1, h2 {
     color: #00e5ff;
 }
 
+.tabela-nevoeiro th {
+    background-color: #4b5b6e;
+    color: #cce7ff;
+}
+
+.tabela-nevoeiro td {
+    background-color: #2f3749;
+    color: #e0e6f0;
+}
+
 .tabela-nightroof th {
     background-color: #2e1313;
     color: #ff6961;
@@ -163,6 +173,10 @@ hr {
     color: #00bcd4;
 }
 
+.titulo-nevoeiro {
+    color: #b3b3ff;
+}
+
 #dia {
     background-color: #2d5f2e;
     border-left: 5px solid #66ff66;
@@ -176,4 +190,9 @@ hr {
 #piscina {
     background-color: #1b4c5c;
     border-left: 5px solid #00bcd4;
+}
+
+#nevoeiro {
+    background-color: #3c3c54;
+    border-left: 5px solid #9999cc;
 }

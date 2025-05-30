@@ -138,6 +138,16 @@ h1, h2 {
     box-shadow: 0 0 10px rgba(212, 127, 0, 0.5);
 }
 
+.container-upgrade img {
+    border-color: #ffcc00;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+.container-others img {
+    border-color: #8a2be2;
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+}
+
 /* Efeito ativo */
 .container-fig.active {
     transform: scale(1.15);
@@ -219,6 +229,26 @@ h1, h2 {
     color: #ffffff;
 }
 
+.tabela-upgrade td {
+    background-color: #5d4a1f;
+    color: #ffe082;
+}
+
+.tabela-upgrade th {
+    background-color: #4a3c18;
+    color: #ffd700;
+}
+
+.tabela-others td {
+    background-color: #3b3a4a;
+    color: #e6e6fa;
+}
+
+.tabela-others th {
+    background-color: #2e2d3d;
+    color: #b0c4de;
+}
+
 .tabela-nightroof th {
     background-color: #2e1313;
     color: #ff6961;
@@ -270,6 +300,15 @@ hr {
     color: #d47f00;
 }
 
+.titulo-upgrade {
+    color: #ffcc00;
+}
+
+.titulo-others {
+    color: #8a2be2;
+}
+
+
 #dia {
     background-color: #2d5f2e;
     border-left: 5px solid #66ff66;
@@ -293,6 +332,11 @@ hr {
 #telhado {
     background-color: #5c2f10;
     border-left: 5px solid #d47f00;
+}
+
+#upgrade {
+    background-color: #4f421e;
+    border-left: 5px solid #ffcc00;
 }
 
 #btnTopo {
@@ -319,3 +363,9 @@ hr {
     color: #66ff66;
     transform: scale(1.1);
 }
+
+#others {
+    background-color: #313040;
+    border-left: 5px solid #8a2be2;
+}
+
